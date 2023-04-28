@@ -20,4 +20,12 @@ class TesteResource {
         return retorno
     }
 
+    @Path('/2')
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    Map<String, String> index2() {
+        Map<String, String> retorno = [teste:'oi luan']
+        return retorno
+    }
+
 }

@@ -44,8 +44,12 @@ compileTestJava {
 
 
 codenarc {
-    toolVersion = '3.1.0'
+    toolVersion = '3.2.0'
     configFile = file("config/codenarc/codenarc.groovy")
     reportFormat = 'html'
-    ignoreFailures = true
+    //ignoreFailures = true
+    maxPriority1Violations = 0
+    maxPriority2Violations = 0
+    maxPriority3Violations = 100
+
 }
